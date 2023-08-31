@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-from random import randint
-from brain_games.scripts.brain_games import welcome_user
-from brain_games.even import even_game
+from brain_games.even_game.even import start_question, game_question, right_answer
+from brain_games.engine import game_engine
 
 
 def main():
-    even_game()
+    #even_game()
+    game_engine(start_question, game_question, right_answer)
+
 
 if __name__ == '__main__':
     main()
