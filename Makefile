@@ -12,3 +12,12 @@ publish:
 
 package-install:
 	python3 -m pip install --user --force-reinstall dist/*.whl
+
+lint:
+	poetry run flake8 brain_games
+
+inst:
+	poetry build
+	poetry publish --dry-run
+	python3 -m pip install --user --force-reinstall dist/*.whl
+	brain-even
