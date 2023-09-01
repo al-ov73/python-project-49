@@ -8,14 +8,15 @@ def game_engine(start_question, game_question, right_answer):
     print(start_question)
     i=0
     while i<3:
-        question=game_question
-        print(f'Question: {game_question}')
+        question=game_question()
+        print(f'Question: {question}')
         answer=input('Your answer: ')
-        if answer==right_answer:
+        correct_answer=right_answer(question)
+        if answer==correct_answer:
             print('Correct!')
             i+=1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {right_answer}.")
+            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.")
             print(f"Let's try again, {name}!")
             break
     if i==3:
