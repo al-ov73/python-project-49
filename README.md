@@ -4,3 +4,5 @@
 <a href="https://codeclimate.com/github/al-ov73/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/10c87f0215ca87a98a31/maintainability" /></a>
 
 https://asciinema.org/a/605594
+
+https://asciinema.org/a/605941
