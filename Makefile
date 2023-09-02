@@ -27,3 +27,9 @@ calc:
 	poetry publish --dry-run
 	python3 -m pip install --user --force-reinstall dist/*whl
 	brain-calc
+
+gcd:
+	poetry build
+	poetry publish --dry-run
+	python3 -m pip install --user --force-reinstall dist/*whl
+	brain-gcd
