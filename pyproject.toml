@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["al-ov71 <klever1987@yandex.ru>"]
+description = "5 games for your brain: even, calc, gcd, prime and progresion"
+authors = ["al-ov73 <klever1987@yandex.ru>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },

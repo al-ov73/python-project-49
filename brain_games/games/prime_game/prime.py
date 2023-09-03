@@ -1,5 +1,6 @@
 from random import randint
 
+
 """
 Ошибка, если конец диапазона - 2
 
@@ -11,22 +12,22 @@ Traceback (most recent call last):
 UnboundLocalError: local variable 'right_answer' referenced before assignment
 """
 
-def game_var():
-    start_question='Answer "yes" if given number is prime. Otherwise answer "no".'
-    game_question=randint(2,100)
-    for i in range(2,game_question):
-        if game_question%i==0:
-            right_answer='no'
+
+def definition_game_var():
+    MAX_NUMBER = 100
+    start_question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    game_question = randint(2, MAX_NUMBER)
+    for i in range(2, game_question):
+        if game_question % i == 0:
+            right_answer = 'no'
             break
         else:
-            right_answer='yes'
+            right_answer = 'yes'
     return start_question, game_question, right_answer
 
 
 def main():
-    print(start_question)
-    game_question_def()
-    right_answer_def()
+    definition_game_var()
 
 
 if __name__ == '__main__':
