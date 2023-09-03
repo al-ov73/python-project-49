@@ -6,3 +6,9 @@
 https://asciinema.org/a/605594
 
 https://asciinema.org/a/605941
+
+https://asciinema.org/a/605954
+
+https://asciinema.org/a/606090
+
+https://asciinema.org/a/606095

@@ -33,3 +33,15 @@ gcd:
 	poetry publish --dry-run
 	python3 -m pip install --user --force-reinstall dist/*whl
 	brain-gcd
+
+progression:
+	poetry build
+	poetry publish --dry-run
+	python3 -m pip install --user --force-reinstall dist/*whl
+	brain-progression
+
+prime:
+	poetry build
+	poetry publish --dry-run
+	python3 -m pip install --user --force-reinstall dist/*whl
+	brain-prime

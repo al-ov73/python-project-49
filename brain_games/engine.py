@@ -2,21 +2,21 @@
 from brain_games.cli import welcome_user
 
 
-def game_engine(start_question, game_question, right_answer):
+def game_engine(game_var):
     print('Welcome to the Brain Games!')
     name=welcome_user()
+    start_question, _, _=game_var()
     print(start_question)
     i=0
     while i<3:
-        question=game_question()
-        print(f'Question: {question}')
+        _, game_question, right_answer=game_var()
+        print(f'Question: {game_question}')
         answer=input('Your answer: ')
-        correct_answer=right_answer(question)
-        if answer==correct_answer:
+        if answer==right_answer:
             print('Correct!')
             i+=1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.")
+            print(f"{answer} is wrong answer ;(. Correct answer was {right_answer}.")
             print(f"Let's try again, {name}!")
             break
     if i==3:
