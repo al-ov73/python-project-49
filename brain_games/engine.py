@@ -10,14 +10,15 @@ def game_engine(game_var):
     print(start_question)
     i = 0
     while i < ROUNDS_QTY:
-        _, game_question, right_answer = game_var()
+        _, game_question, r_answer = game_var()
         print(f'Question: {game_question}')
         answer = input('Your answer: ')
-        if answer == right_answer:
+        if answer == r_answer:
             print('Correct!')
             i += 1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {right_answer}.")
+            print(
+                f"{answer} is wrong answer ;(. Correct answer was {r_answer}.")
             print(f"Let's try again, {name}!")
             break
     if i == 3:

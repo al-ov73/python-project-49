@@ -14,9 +14,12 @@ def definition_game_var():
     right_answer = str(list[rand_elem])
     list[rand_elem] = ".."
     list_str = str(list)
-    game_question = list_str[1:len(list_str) - 1:]  # убираем квадратные скобки
-    game_question = game_question.replace("'", "")  # убираем '' вокруг исключенного элемента
-    game_question = game_question.replace(",", "")  # убираем ,
+    # убираем квадратные скобки
+    game_question = list_str[1:len(list_str) - 1:]
+    # убираем '' вокруг исключенного элемента
+    game_question = game_question.replace("'", "")
+    # убираем ,
+    game_question = game_question.replace(",", "")
     return start_question, game_question, right_answer
 
 

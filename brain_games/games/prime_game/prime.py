@@ -15,7 +15,7 @@ UnboundLocalError: local variable 'right_answer' referenced before assignment
 
 def definition_game_var():
     MAX_NUMBER = 100
-    start_question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    start = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     game_question = randint(2, MAX_NUMBER)
     for i in range(2, game_question):
         if game_question % i == 0:
@@ -23,7 +23,7 @@ def definition_game_var():
             break
         else:
             right_answer = 'yes'
-    return start_question, game_question, right_answer
+    return start, game_question, right_answer
 
 
 def main():
