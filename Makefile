@@ -15,6 +15,7 @@ package-install:
 
 lint:
 	poetry run flake8
+
 even:
 	poetry build
 	poetry publish --dry-run
