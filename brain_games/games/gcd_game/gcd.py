@@ -17,6 +17,7 @@ def definition_game_var():
                 right_answer = str(number)
     # преобразовываем ответ в строку без []
     game_question = str(question)[1:len(str(question)) - 1:]
+    game_question = game_question.replace(',', '')
     return start_question, game_question, right_answer
 
 
