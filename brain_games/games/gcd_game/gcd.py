@@ -3,7 +3,7 @@ from random import randint
 
 
 def definition_game_var():
-    start_question = 'What is the result of the expression?'
+    start_question = 'Find the greatest common divisor of given numbers.'
     question = [randint(1, 100), randint(1, 100)]
     num1, num2 = question
     right_answer = 0
