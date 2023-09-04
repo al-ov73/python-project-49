@@ -13,9 +13,9 @@ def def_gcd_var():
                 right_answer = str(number)
     else:
         for number in range(1, num2 + 1):
-            if num2 % number == 0 and num2 % number == 0:
+            if num2 % number == 0 and num1 % number == 0:
                 right_answer = str(number)
-    # преобразовываем ответ в строку без []
+    # преобразовываем ответ в строку без [] и ','
     game_question = str(question)[1:len(str(question)) - 1:]
     game_question = game_question.replace(',', '')
     return start_question, game_question, right_answer
