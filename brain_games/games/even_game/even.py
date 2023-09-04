@@ -2,7 +2,7 @@
 from random import randint
 
 
-def definition_game_var():
+def def_even_var():
     start_quest = 'Answer "yes" if the number is even, otherwise answer "no".'
     game_quest = randint(1, 1000)
     if game_quest % 2 == 0:
@@ -13,7 +13,7 @@ def definition_game_var():
 
 
 def main():
-    definition_game_var()
+    def_even_var()
 
 
 if __name__ == '__main__':

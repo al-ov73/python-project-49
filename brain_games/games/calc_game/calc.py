@@ -2,7 +2,7 @@
 from random import randint, choice
 
 
-def definition_game_var():
+def def_calc_var():
     start_question = 'What is the result of the expression?'
     first_num = randint(1, 10)
     math_action = choice(["+", "-", "*"])
@@ -18,7 +18,7 @@ def definition_game_var():
 
 
 def main():
-    definition_game_var()
+    def_calc_var()
 
 
 if __name__ == '__main__':

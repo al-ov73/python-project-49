@@ -2,7 +2,7 @@
 from random import randint
 
 
-def definition_game_var():
+def def_gcd_var():
     start_question = 'Find the greatest common divisor of given numbers.'
     question = [randint(1, 100), randint(1, 100)]
     num1, num2 = question
@@ -22,7 +22,7 @@ def definition_game_var():
 
 
 def main():
-    definition_game_var
+    def_gcd_var
 
 
 if __name__ == '__main__':

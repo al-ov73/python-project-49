@@ -2,7 +2,7 @@
 from random import randint
 
 
-def definition_game_var():
+def def_progression_var():
     start_question = 'What number is missing in the progression?'
     first_num = randint(1, 10)
     step = randint(2, 5)
@@ -24,7 +24,7 @@ def definition_game_var():
 
 
 def main():
-    definition_game_var()
+    def_progression_var()
 
 
 if __name__ == '__main__':
