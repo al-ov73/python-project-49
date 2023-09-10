@@ -3,7 +3,7 @@
 
 <a href="https://codeclimate.com/github/al-ov73/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/10c87f0215ca87a98a31/maintainability" /></a>
 
-https://asciinema.org/a/605594
+<script async id="asciicast-605594" src="https://asciinema.org/a/605594.js"></script>
 
 https://asciinema.org/a/605941
 
