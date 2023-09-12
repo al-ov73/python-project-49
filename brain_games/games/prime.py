@@ -12,6 +12,4 @@ def generate_question_answer():
         if game_question % i == 0:
             right_answer = 'no'
             break
-        else:
-            right_answer = 'yes'
     return game_question, right_answer
