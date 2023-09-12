@@ -2,15 +2,14 @@
 from brain_games.cli import welcome_user
 
 
-def game_engine(game_var):
+def game_engine(start_question, game_var):
     ROUNDS_QTY = 3
     print('Welcome to the Brain Games!')
     name = welcome_user()
-    start_question, _, _ = game_var()
     print(start_question)
     i = 0
     while i < ROUNDS_QTY:
-        _, game_question, r_answer = game_var()
+        game_question, r_answer = game_var()
         print(f'Question: {game_question}')
         answer = input('Your answer: ')
         if answer == r_answer:

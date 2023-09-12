@@ -2,8 +2,10 @@
 from random import randint, choice
 
 
-def def_calc_var():
-    start_question = 'What is the result of the expression?'
+start_question = 'What is the result of the expression?'
+
+
+def generate_question_answer():
     first_num = randint(1, 10)
     math_action = choice(["+", "-", "*"])
     last_num = randint(1, 10)
@@ -14,12 +16,4 @@ def def_calc_var():
         right_answer = str(first_num - last_num)
     else:
         right_answer = str(first_num * last_num)
-    return start_question, game_question, right_answer
-
-
-def main():
-    def_calc_var()
-
-
-if __name__ == '__main__':
-    main()
+    return game_question, right_answer

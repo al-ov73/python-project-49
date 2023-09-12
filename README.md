@@ -1,3 +1,23 @@
+Project run 5 mini-games to use your brain:
+1. Even game
+to check if the number is even
+2. Calc game
+to solve math expression
+3. GCD game
+to find the greatest common divisor
+4. Progression game
+to find missing number in the progression
+5. Prime game
+to check if given number is prime
+
+--------------------------
+To install game, you should enter the command:
+make game-install
+
+To run game, you should enter the command:
+make <game_name>
+--------------------------
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/al-ov73/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/al-ov73/python-project-49/actions)
 

@@ -2,8 +2,10 @@
 from random import randint
 
 
-def def_progression_var():
-    start_question = 'What number is missing in the progression?'
+start_question = 'What number is missing in the progression?'
+
+
+def generate_question_answer():
     first_num = randint(1, 10)
     step = randint(2, 5)
     list = []
@@ -20,12 +22,4 @@ def def_progression_var():
     game_question = game_question.replace("'", "")
     # убираем ,
     game_question = game_question.replace(",", "")
-    return start_question, game_question, right_answer
-
-
-def main():
-    def_progression_var()
-
-
-if __name__ == '__main__':
-    main()
+    return game_question, right_answer

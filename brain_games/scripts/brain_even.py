@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.even_game.even import def_even_var
+from brain_games.games.even import generate_question_answer, start_question
 from brain_games.engine import game_engine
 
 
 def main():
-    game_engine(def_even_var)
+    game_engine(start_question, generate_question_answer)
 
 
 if __name__ == '__main__':

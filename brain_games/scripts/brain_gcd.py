@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.gcd_game.gcd import def_gcd_var
+from brain_games.games.gcd import generate_question_answer, start_question
 from brain_games.engine import game_engine
 
 
 def main():
-    game_engine(def_gcd_var)
+    game_engine(start_question, generate_question_answer)
 
 
 if __name__ == '__main__':

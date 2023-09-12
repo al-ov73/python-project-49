@@ -16,32 +16,23 @@ package-install:
 lint:
 	poetry run flake8 brain_games
 
-even:
+
+game-install:
 	poetry build
 	poetry publish --dry-run
 	python3 -m pip install --user --force-reinstall dist/*.whl
+
+even:
 	brain-even
 
 calc:
-	poetry build
-	poetry publish --dry-run
-	python3 -m pip install --user --force-reinstall dist/*whl
 	brain-calc
 
 gcd:
-	poetry build
-	poetry publish --dry-run
-	python3 -m pip install --user --force-reinstall dist/*whl
 	brain-gcd
 
 progression:
-	poetry build
-	poetry publish --dry-run
-	python3 -m pip install --user --force-reinstall dist/*whl
 	brain-progression
 
 prime:
-	poetry build
-	poetry publish --dry-run
-	python3 -m pip install --user --force-reinstall dist/*whl
 	brain-prime
