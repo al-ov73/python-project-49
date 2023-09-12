@@ -15,7 +15,7 @@ To install game, you should enter the command:
 make game-install
 
 To run game, you should enter the command:
-make {game_name}
+make game_name
 --------------------------
 
 ### Hexlet tests and linter status:
