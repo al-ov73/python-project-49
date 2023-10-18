@@ -13,20 +13,20 @@ to check if given number is prime
 --------------------------
 To install game, you should enter the command:
 
-"""
+'''
 git clone git@github.com:al-ov73/python-project-49.git
 make game-install
-"""
+'''
 
 To run game, you should enter *one* of the following command:
 
-"""
+'''
 make brain-even
 make brain-calc
 make brain-gcd
 make brain-progression
 make brain-prime
-"""
+'''
 
 --------------------------
 
